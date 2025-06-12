@@ -28,3 +28,9 @@ Point& Point::operator=(const Point& other)
     (void)other;
     return *this;
 }
+
+std::ostream& operator<<(std::ostream& os, const Point& point)
+{
+    os << "(" << point.x << "|" << point.y << ")";
+    return (os);
+}
