@@ -1,7 +1,7 @@
 # Compiler and flags
 CXX := g++
 CXXFLAGS := -Wall -Wextra -Werror -std=c++98
-NAME := Fixed00
+NAME := Fixed01
 
 # vpath for header files
 vpath %.hpp include/

@@ -1,3 +1,5 @@
 *.pdf
 obj/
-Fixed
+Fixed*
+!Fixed.cpp
+!Fixed.hpp
