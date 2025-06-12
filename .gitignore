@@ -3,3 +3,4 @@ obj/
 Fixed*
 !Fixed.cpp
 !Fixed.hpp
+.vscode
