@@ -3,12 +3,22 @@
 
 int main(void)
 {
-    Point a(10.2f, 33.5f);
-    Point b(1.2f, 330.5f);
-    Point c(100.2f, 363.5f);
-    Point p(34, 343);
     std::cout << std::boolalpha;
-    std::cout << "a" << a << " b" << b << " c" << c << " p" << p << std::endl;
-    std::cout << "in Triangle: " << bsp(a, b, c, p) << std::endl;
+
+    {
+        Point a(0.0f, 0.0f), b(10.0f, 0.0f), c(5.0f, 10.0f), p(5.0f, 5.0f);
+        std::cout << "Test 1 - Inside: " << bsp(a, b, c, p) << std::endl;
+    }
+
+    {
+        Point a(0.0f, 0.0f), b(10.0f, 0.0f), c(5.0f, 10.0f), p(20.0f, 5.0f);
+        std::cout << "Test 2 - Outside: " << bsp(a, b, c, p) << std::endl;
+    }
+
+    {
+        Point a(0.0f, 0.0f), b(10.0f, 0.0f), c(5.0f, 10.0f), p(5.0f, 0.0f);
+        std::cout << "Test 3 - On Edge: " << bsp(a, b, c, p) << std::endl;
+    }
+
     return 0;
 }
