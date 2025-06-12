@@ -125,6 +125,38 @@ Fixed Fixed::operator--(int)
     return temp;
 }
 
+Fixed &Fixed::min(Fixed &f1, Fixed &f2)
+{
+    if (f1.raw_bits < f2.raw_bits)
+        return (f1);
+    else
+        return (f2);
+}
+
+const Fixed &Fixed::min(const Fixed &f1, const Fixed &f2)
+{
+    if (f1.raw_bits < f2.raw_bits)
+        return (f1);
+    else
+        return (f2);
+}
+
+Fixed &Fixed::max(Fixed &f1, Fixed &f2)
+{
+    if (f1.raw_bits > f2.raw_bits)
+        return (f1);
+    else
+        return (f2);
+}
+
+const Fixed &Fixed::max(const Fixed &f1, const Fixed &f2)
+{
+    if (f1.raw_bits > f2.raw_bits)
+        return (f1);
+    else
+        return (f2);
+}
+
 int Fixed::getRawBits( void) const
 {
     std::cout << "getRawBits member function called" << std::endl;
