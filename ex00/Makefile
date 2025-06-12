@@ -1,7 +1,7 @@
 # Compiler and flags
 CXX := g++
 CXXFLAGS := -Wall -Wextra -Werror -std=c++98
-NAME := SedIsForLosers
+NAME := Fixed
 
 # vpath for header files
 vpath %.hpp include/
@@ -10,10 +10,10 @@ vpath %.hpp include/
 vpath %.cpp src/
 
 # .h and .hpp files
-H_FILES := include.hpp
+H_FILES := Fixed.hpp
 
 # .cpp source files
-SRC_FILES := main.cpp
+SRC_FILES := main.cpp Fixed.cpp
 
 # Object directory and object files
 OBJ_DIR := obj
