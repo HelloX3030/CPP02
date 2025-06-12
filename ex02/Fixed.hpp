@@ -31,10 +31,10 @@ class Fixed
         Fixed operator/(const Fixed& other) const;
         
         // increments
-        Fixed& operator++();     // ++a
-        Fixed& operator--();     // --a
-        Fixed operator++(int);   // a++
-        Fixed operator--(int);   // a--
+        Fixed& operator++();
+        Fixed& operator--();
+        Fixed operator++(int); 
+        Fixed operator--(int);
 
         // Functions
         int getRawBits( void ) const;
