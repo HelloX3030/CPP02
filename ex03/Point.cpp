@@ -29,8 +29,18 @@ Point& Point::operator=(const Point& other)
     return *this;
 }
 
+Fixed Point::getX() const
+{
+    return (x);
+}
+
+Fixed Point::getY() const
+{
+    return (y);
+}
+
 std::ostream& operator<<(std::ostream& os, const Point& point)
 {
-    os << "(" << point.x << "|" << point.y << ")";
+    os << "(" << point.getX() << "|" << point.getY() << ")";
     return (os);
 }
