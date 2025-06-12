@@ -78,18 +78,22 @@ Fixed Fixed::operator+(const Fixed& other) const
 Fixed Fixed::operator-(const Fixed& other) const
 {
     Fixed result;
-    result.setRawBits(this->raw_bits + other.raw_bits);
+    result.setRawBits(this->raw_bits - other.raw_bits);
     return (result);
 }
 
 Fixed Fixed::operator*(const Fixed& other) const
 {
-
+    Fixed result;
+    result.setRawBits(this->raw_bits * other.raw_bits);
+    return (result);
 }
 
 Fixed Fixed::operator/(const Fixed& other) const
 {
-
+    Fixed result;
+    result.setRawBits(this->raw_bits / other.raw_bits);
+    return (result);
 }
 
 int Fixed::getRawBits( void) const
